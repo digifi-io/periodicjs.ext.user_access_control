@@ -1,16 +1,16 @@
 {
   "periodic_compatibility": "10.5.9",
   "periodic_dependencies": [{
-    "extname": "periodicjs.ext.passport",
+    "extname": "@digifi/periodicjs.ext.passport",
     "version": "1.0.0"
   }],
   "periodic_type": 3,
   "periodic_priority": 10,
   "periodic_config": {
     "periodicjs_ext_reactapp": {
-      "navigation": "node_modules/periodicjs.ext.user_access_control/views/reactapp/components/navigation.manifest.js",
+      "navigation": "node_modules/@digifi/periodicjs.ext.user_access_control/views/reactapp/components/navigation.manifest.js",
       "manifests" : [ 
-        "node_modules/periodicjs.ext.user_access_control/views/reactapp/manifests/"
+        "node_modules/@digifi/periodicjs.ext.user_access_control/views/reactapp/manifests/"
       ]
     },
     "periodicjs_ext_admin": {

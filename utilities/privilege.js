@@ -1,6 +1,6 @@
 'use strict';
 const periodic = require('periodicjs');
-const passportUtilities = periodic.locals.extensions.get('periodicjs.ext.passport');
+const passportUtilities = periodic.locals.extensions.get('@digifi/periodicjs.ext.passport');
 const httpMethods = ['get', 'put', 'post', 'delete'];
 
 function getPrivilegeCheckTransform(options) {
@@ -30,7 +30,7 @@ const httpMethodTransformReducer = (uacSettings, transformType) => (result, http
 };
 
 function getPrivilegeTransforms() {
-  const uacSettings = periodic.settings.extensions['periodicjs.ext.user_access_control'];
+  const uacSettings = periodic.settings.extensions['@digifi/periodicjs.ext.user_access_control'];
   const transforms = {
     pre: httpMethods.reduce(httpMethodTransformReducer(uacSettings, 'pre'), {}),
     post: httpMethods.reduce(httpMethodTransformReducer(uacSettings, 'post'), {}),
@@ -40,7 +40,7 @@ function getPrivilegeTransforms() {
 
 function checkPrivileges(options) {
   const { req, entitytype, privileges } = options;
-  const uacSettings = periodic.settings.extensions['periodicjs.ext.user_access_control'];
+  const uacSettings = periodic.settings.extensions['@digifi/periodicjs.ext.user_access_control'];
   let entityTypeCheck = (entitytype && entitytype[req.user.entitytype]) ?
     true :
     entitytype[Object.keys(entitytype)[0]];

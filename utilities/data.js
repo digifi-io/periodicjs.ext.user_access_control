@@ -35,7 +35,7 @@ function getDataCoreController() {
           router: CoreController.protocol.api.implement({
             model_name: dataName,
             // override,
-            dirname: path.join(periodic.config.app_root, '/node_modules/periodicjs.ext.user_access_control/views'),
+            dirname: path.join(periodic.config.app_root, '/node_modules/@digifi/periodicjs.ext.user_access_control/views'),
           }).router,
         });
       }

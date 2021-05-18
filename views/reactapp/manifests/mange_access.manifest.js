@@ -261,7 +261,7 @@ function getModalPage(options) {
   };
 }
 
-const uacSettings = periodic.settings.extensions[ 'periodicjs.ext.user_access_control' ];
+const uacSettings = periodic.settings.extensions[ '@digifi/periodicjs.ext.user_access_control' ];
 
 module.exports = {
   containers: (uacSettings.use_manifests)

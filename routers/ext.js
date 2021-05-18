@@ -8,8 +8,8 @@ const usesReactApp = periodic.extensions.has('periodicjs.ext.reactapp');
 //controllers.admin.adminResLocals
 
 if (usesBasicAdmin || usesReactApp) {
-  const passportControllers = periodic.controllers.extension.get('periodicjs.ext.passport');
-  const uacControllers = periodic.controllers.extension.get('periodicjs.ext.user_access_control').uac;
+  const passportControllers = periodic.controllers.extension.get('@digifi/periodicjs.ext.passport');
+  const uacControllers = periodic.controllers.extension.get('@digifi/periodicjs.ext.user_access_control').uac;
   const utilities = require('../utilities');
   const dataRouters = utilities.data.getDataCoreController();
   
