@@ -1,7 +1,7 @@
 {
   "name": "@digifi/periodicjs.ext.user_access_control",
   "description": "A user access control extension for Periodicjs that uses user roles and user privleges to controll access",
-  "version": "10.1.0",
+  "version": "10.1.1",
   "main": "index.js",
   "engines": {
     "node": "^6.x"
@@ -26,8 +26,8 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha -R spec --recursive",
-    "postinstall": "cd ../../ && periodicjs aex @digifi/periodicjs.ext.user_access_control",
-    "postuninstall": "cd ../../ && periodicjs rex @digifi/periodicjs.ext.user_access_control"
+    "postinstall": "cd ../../../ && periodicjs aex @digifi/periodicjs.ext.user_access_control",
+    "postuninstall": "cd ../../../ && periodicjs rex @digifi/periodicjs.ext.user_access_control"
   },
   "dependencies": {},
   "devDependencies": {
